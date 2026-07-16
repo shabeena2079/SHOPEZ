@@ -1,0 +1,164 @@
+.admin-orders{
+    padding:30px;
+    background:#353d47;
+    min-height:100vh;
+}
+
+.orders-title{
+    color:#fff;
+    font-size:28px;
+    margin-bottom:25px;
+    font-weight:600;
+}
+
+.no-orders{
+    color:#fff;
+    text-align:center;
+    margin-top:80px;
+}
+
+.order-card{
+    display:flex;
+    gap:25px;
+    align-items:flex-start;
+    background:#1f2937;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:20px;
+    border:1px solid #404854;
+    transition:.3s;
+}
+
+.order-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 25px rgba(37,99,235,0.4);
+}
+
+.order-image{
+    width:140px;
+    display:flex;
+    justify-content:center;
+}
+
+.order-image img{
+    width:120px;
+    height:140px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:8px;
+    padding:8px;
+}
+
+.order-details{
+    flex:1;
+}
+
+.order-details h3{
+    color:#fff;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.order-details p{
+    color:#d1d5db;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+.order-details strong{
+    color:#fff;
+}
+
+.order-actions{
+    width:180px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.status{
+    text-align:center;
+    padding:8px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+    color:#fff;
+}
+
+/* Status Colors */
+
+.pending{
+    background:#f59e0b;
+}
+
+.processing{
+    background:#3b82f6;
+}
+
+.shipped{
+    background:#06b6d4;
+}
+
+.delivered{
+    background:#22c55e;
+}
+
+.cancelled{
+    background:#ef4444;
+}
+
+.order-actions select{
+    height:38px;
+    border:none;
+    border-radius:6px;
+    outline:none;
+    padding:0 10px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.update-btn{
+    height:40px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.update-btn:hover{
+    background:#1d4ed8;
+}
+
+.cancel-btn{
+    height:40px;
+    background:#dc2626;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.cancel-btn:hover{
+    background:#b91c1c;
+}
+
+@media(max-width:900px){
+
+    .order-card{
+        flex-direction:column;
+    }
+
+    .order-image{
+        width:100%;
+    }
+
+    .order-actions{
+        width:100%;
+    }
+
+}

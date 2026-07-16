@@ -1,0 +1,180 @@
+.orders-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 40px auto;
+    min-height: 80vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.orders-heading {
+    text-align: center;
+    font-size: 34px;
+    color: black;
+    margin-bottom: 35px;
+}
+
+.order-card {
+    background: #1f2937;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    padding: 28px;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.order-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.image-section {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.order-image {
+    width: 150px;
+    height: 170px;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* ===========================
+   Details
+=========================== */
+
+.order-details {
+    flex: 1;
+    color: white;
+}
+
+.order-details h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #d1d5db;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   Info Rows
+=========================== */
+
+.info-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 16px;
+}
+
+.info-row span {
+    color: #d1d5db;
+    font-size: 17px;
+}
+
+.info-row strong {
+    color: white;
+}
+
+/* ===========================
+   Status
+=========================== */
+
+.status-text {
+    margin-top: 18px;
+    font-size: 18px;
+    color: white;
+}
+
+.status-text strong {
+    color: white;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.button-group {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.track-btn,
+.cancel-btn {
+    padding: 11px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.track-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.track-btn:hover {
+    background: #1d4ed8;
+}
+
+.cancel-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #b91c1c;
+}
+
+/* ===========================
+   Empty Orders
+=========================== */
+
+.no-orders {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 28px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 900px) {
+
+    .order-item {
+        flex-direction: column;
+    }
+
+    .image-section {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .track-btn,
+    .cancel-btn {
+        width: 100%;
+    }
+}

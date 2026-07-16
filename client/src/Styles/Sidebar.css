@@ -1,0 +1,47 @@
+.Sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    min-height: 100vh;
+}
+
+.Sidebar h2 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.Sidebar h3 {
+    font-size: 20px;
+    margin: 20px 0 15px;
+    color: #555;
+    font-weight: 600;
+}
+
+.Sidebar div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.Sidebar input {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.Sidebar label {
+    font-size: 8px;
+    color: #555;
+    cursor: pointer;
+}
+
+.Sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

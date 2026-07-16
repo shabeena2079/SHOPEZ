@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.admin-container{
+    min-height:100vh;
+    background:#353d47;
+}
+
+.admin-navbar{
+    width:100%;
+    height:52px;
+    background:#1E293B;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+}
+
+.admin-logo{
+    color:white;
+    font-size:25px;
+    font-weight:600;
+}
+
+.admin-links{
+    gap:35px;
+    align-items: center;
+    display: flex;
+}
+
+.admin-links a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.admin-links a:hover{
+    
+    color:#d57a16;
+}
+
+.main-content{
+    padding:35px;
+}
+
+/* Dashboard */
+
+.dashboard{
+    background:#343b45;
+    min-height:calc(100vh - 55px);
+    padding:20px 38px;
+}
+.dashboard-cards{
+    display:flex;
+    gap: 70px;;
+}
+
+.dash-card{
+    width:210px;
+    height:140px;
+    padding-bottom: 30px;
+    background:#191919;
+    color: white;
+    border-radius:10px;
+    text-align:center;
+    padding-top:18px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.dash-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 25px rgba(37,99,235,0.4);
+}
+.dash-card h2{
+    font-size:30px;
+    color:white;
+}
+
+.dash-card p{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.dash-card button{
+    background:transparent;
+    color:#d57a16;
+    border:2px solid #d57a16;
+    padding:6px 22px;
+    border-radius:7px;
+    cursor:pointer;
+}
+
+.banner-box{
+    width:430px;
+    background:#191919;
+    margin-top:55px;
+    border-radius:10px;
+    padding:30px;
+}
+.banner-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 25px rgba(37,99,235,0.4);
+}
+.banner-box h2{
+    color:white;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.banner-box input{
+    width:100%;
+    height:45px;
+    background:#202020;
+    border:1px solid #444;
+    color:white;
+    padding-left:12px;
+    margin-bottom:25px;
+}
+
+.banner-box button{
+    display:block;
+    margin:auto;
+    background:transparent;
+    color:#d57a16;
+    border:2px solid #d57a16;
+    padding:8px 35px;
+    border-radius:8px;
+    cursor:pointer;
+}
+.logout-btn{
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.logout-btn:hover{
+    color:#d57a16;
+}

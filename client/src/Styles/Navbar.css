@@ -1,0 +1,252 @@
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    box-sizing: border-box;
+}
+
+/* ShopEZ Logo */
+.logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    margin: 0;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.logo:hover h2 {
+    color: #e5e7eb;
+}
+
+/* ================= Search Box ================= */
+
+.searchBox {
+    width: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 100%;
+    height: 40px;
+    padding: 0 45px 0 15px;
+    border: none;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #212121;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search::placeholder {
+    color: #757575;
+    font-size: 15px;
+}
+
+.search:focus {
+    box-shadow: 0 0 0 2px rgba(40, 116, 240, 0.2);
+}
+
+.searchIcon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #2874f0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.searchIcon:hover {
+    color: #0d5ddb;
+}
+
+/* ================= Right Side ================= */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* My Orders Button */
+
+.myorders-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myorders-btn:hover {
+    background: orange;
+    color: white;
+}
+
+/* Login Button */
+
+.login-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: white;
+    color: blue;
+}
+
+/* Account Section */
+
+.account-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account-icon {
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+.username {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Profile Popup */
+
+.profile-box {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 230px;
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.profile-box h3 {
+    margin: 0 0 15px;
+    color: blue;
+}
+
+.profile-box p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.profile-box .logout-btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Logout Button */
+
+.logout-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #eeeeee;
+    color: red;
+}
+
+/* Cart */
+
+.cart {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cart:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+
+@media(max-width:600px){
+
+    .header{
+        height:auto;
+        padding:10px;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+    .logo h2{
+        font-size:22px;
+    }
+    .searchBox{
+        order:3;
+        width:100%;
+    }
+    .search{
+        width:100%;
+        height:38px;
+    }
+
+
+   .nav-right{
+        gap:10px;
+    }
+
+
+    .myorders-btn,
+    .login-btn{
+
+        padding:6px 10px;
+        font-size:12px;
+
+    }
+
+
+    .username{
+        display:none;
+    }
+
+
+    .account-icon{
+        font-size:30px;
+    }
+
+}

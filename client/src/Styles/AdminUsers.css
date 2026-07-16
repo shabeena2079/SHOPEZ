@@ -1,0 +1,38 @@
+.admin-users{
+    padding:20px;
+}
+
+.admin-users h1{
+    color:white;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#191919;
+    color:white;
+}
+
+th{
+    background:#111722;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+}
+
+tr{
+    border-bottom:1px solid #333;
+}
+
+.delete-btn{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    cursor:pointer;
+    border-radius:5px;
+}

@@ -1,0 +1,179 @@
+.add-product-container {
+    width: 850px;
+    margin: 40px auto;
+    padding: 35px;
+    background: linear-gradient(145deg, #1f2937, #111827);
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+.add-product-container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+
+/* Inputs, Textarea & Select */
+
+.add-product-container input,
+.add-product-container textarea,
+.add-product-container select {
+    width: 100%;
+    padding: 13px 15px;
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.add-product-container select {
+    cursor: pointer;
+}
+
+.add-product-container select option {
+    background: #111827;
+    color: white;
+}
+
+.add-product-container input::placeholder,
+.add-product-container textarea::placeholder {
+    color: #9ca3af;
+}
+
+.add-product-container input:focus,
+.add-product-container textarea:focus,
+.add-product-container select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #e5e7eb;
+}
+
+/* Variants */
+
+.variant-box {
+    display: flex;
+    gap: 10px;
+}
+
+.variant-box input {
+    flex: 1;
+}
+
+.variant-box button {
+    width: 90px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.variant-box button:hover {
+    background: #1d4ed8;
+}
+
+.variant-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.variant-list span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #2563eb;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.variant-list button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Add Button */
+
+.add-btn {
+    margin-top: 15px;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg,#2563eb,#3b82f6);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37,99,235,0.4);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .add-product-container {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .row,
+    .row2 {
+        grid-template-columns: 1fr;
+    }
+
+    .variant-box {
+        flex-direction: column;
+    }
+
+    .variant-box button {
+        width: 100%;
+        height: 42px;
+    }
+}
